@@ -1,42 +1,41 @@
+# Detecting-PAN-Card-Tampering-with-Easy-OCR
 
-# Pan Card Text Detection using OCR
-The "Pan Card Text Detection using OCR" project aims to extract text information from Pan Card images using Optical Character Recognition (OCR) technology. The project provides a user-friendly interface where users can upload Pan Card images, and the application will process the image to extract relevant text data. This extracted data is then presented to the user in a structured format for easy readability and interpretation.
-
+The **Detecting-PAN-Card-Tampering-with-Easy-OCR** project extracts text from Pan Card images using Optical Character Recognition (OCR). Users can upload Pan Card images through an easy-to-use interface, and the app will process these images to extract and display the text in a clear format.
 
 ## Key Features
 
-- Text Detection: The project utilizes the EasyOCR library for text detection in Pan Card images. EasyOCR is a Python package that provides a simple interface for performing OCR tasks with high accuracy.
-- User Interface: A streamlined user interface is implemented using Streamlit, allowing users to easily upload Pan Card images and view the extracted text data.
-- Preprocessing: Image preprocessing techniques are applied to ensure optimal text extraction. This includes contrast adjustment and orientation correction to handle images in both landscape and portrait orientations.
-- Bounding Box Visualization: Bounding boxes are overlaid on the original image to visually indicate the detected text regions, enhancing the understanding of the OCR process.
-- Data Extraction: The extracted text data is processed to filter out irrelevant information and present only the essential details from the Pan Card.
-- Data Presentation: The extracted text data is presented to the user in a structured DataFrame format, facilitating easy interpretation and further analysis if required.
+- **Text Detection:** Uses the EasyOCR library to accurately detect text in Pan Card images.
+- **User Interface:** Built with Streamlit, it lets users upload images and view the extracted text easily.
+- **Preprocessing:** Enhances image quality for better text extraction, including contrast adjustment and rotation correction.
+- **Bounding Box Visualization:** Shows where the text is detected on the image to help understand the OCR results.
+- **Data Extraction:** Filters out unnecessary information and presents only key details from the Pan Card.
+- **Data Presentation:** Displays the extracted text in a structured format for easy reading and analysis.
 
-## Libraries Used:
+## Libraries Used
 
-- Streamlit: For building the user interface and handling file uploads.
-- OpenCV (cv2): For image processing tasks such as grayscale conversion and rotation.
-- Pandas: For data manipulation and structuring the extracted text data.
-- Matplotlib: For visualization purposes, particularly for displaying bounding boxes.
-- EasyOCR: For performing optical character recognition on the Pan Card images.
-## Project Components:
-- tamp_detection.py: This module contains functions for preprocessing images, performing OCR on Pan Card images, filtering out irrelevant text data, and visualizing bounding boxes.
-- app.py: The main application script built using Streamlit. It handles user interactions, file uploads, and integrates the functionalities from tamp_detection.py to process uploaded Pan Card images and display the extracted text data.
+- **Streamlit:** For the user interface and file uploads.
+- **OpenCV (cv2):** For image processing like converting to grayscale and rotating images.
+- **Pandas:** For organizing and structuring the extracted text data.
+- **Matplotlib:** For showing bounding boxes on the image.
+- **EasyOCR:** For performing OCR on the Pan Card images.
+
+## Project Components
+
+- **tamp_detection.py:** Contains functions for preprocessing images, performing OCR, filtering text, and visualizing bounding boxes.
+- **app.py:** Main script using Streamlit to handle user interactions and display results.
+
 ## Installation
 
-requirements.txt
-
-run this command in terminal
-```bash
-  pip install -r requirements.txt
-```
-    
+1. **Install Dependencies:** Run the following command in your terminal:
+   ```bash
+   pip install -r requirements.txt
+   ```
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/phinglaspure123/Pan-Card-Tampering-Detection-using-easyOCR-final.git
+  git clone https://github.com/namandm/Detecting-PAN-Card-Tampering-with-Easy-OCR.git
 ```
 
 Go to the project directory
@@ -57,8 +56,4 @@ Start the server
   streamlit run app.py
 ```
 
-
-## Authors
-
-- [@phinglaspure123](https://github.com/phinglaspure123)
 
